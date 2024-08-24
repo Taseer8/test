@@ -1,0 +1,223 @@
+answers
+
+
+1.1 -> Its is signature of the main method  
+  ->from here the execution starts and entry point
+	void -> Is a return type which doesn't return any thing
+ 		-> it also a keyword
+ 	
+	static -  static is keyword 
+		-> it a non access specifier 
+		-> the static keyword is used to define static variables.
+		-> and it is used in the static methods
+	public - it is a keyword
+		-> it a access specifier
+		-> the public keyword is used for access the methods and class any where in the class.
+
+	(String args[]) used to store the command line arguments.  
+
+ 1.2  void -> Is a return type which doesn't return any thing
+ 		-> it also a keyword
+ 
+1.3 static -  static is keyword 
+		-> it a non access specifier 
+		-> the static keyword is used to define static variables.
+		-> and it is used in the static methods
+1.4 final -> final is keyword 
+		-> it used to initialize the constant values
+		-> if we use final keyword to initialize we cant provide it as a null.
+1.5 public - it is a keyword
+		-> it a access specifier
+		-> the public keyword is used for access the methods and class any where in the class.
+
+
+2 .--Datatype - it specifies which type of date to be stored.
+				there are 2 types of datatypes
+					1. primitive datatypes.
+					2.non-  primitive datatypes.
+ primitive datatypes.																		non-primitive datatypes.
+->there  are 8 data types																		-> they are user define datatype
+->1. byte 2. short 3.int 4.long 5.char 6.double 7.float 8.Boolean 										-> such as array,class
+-> are have fixed size																			->they don't have fixed size.
+-> are build in datatype in java
+
+
+3. Variables are register area in the memory used to store the values. / it is container 
+ 		there are 4 types of variables 
+		-> local variables
+  		->static variables
+		-> non static/ instance variables
+		->parametrised variables
+4. Methods are set of instruction or stated used to perform the particular task.
+		there are 2 types of methods 
+		-> static methods 
+		->instance methods
+		->static methods have 4 types 
+				-> method without return type and arguments.       
+				-> method without return type and with arguments.
+				-> method with return type and without arguments.
+				->method with return type and with arguments.
+
+5. Instance is create by the help of new keyword and the Classname with common braces () 
+    
+	public class Test{
+	
+		 new Test();
+	}
+
+
+6 .
+ public class SumOfArray{
+	
+	 static int sumOfArray[] ={1, 2, 3, 4, 5}; 
+	 public static void main(String args[]){
+		 int total=0;
+		 for(int i=0; i<sumOfArray.length; i++){
+			 System.out.println("array elements:"+sumOfArray[i]);
+			  total = sumOfArray[0]+sumOfArray[1]+sumOfArray[2]+sumOfArray[3]+sumOfArray[4]; 
+		 }
+		 System.out.println("total:"+total);
+	 }
+
+}
+
+7.
+public class Reverse{
+	
+	 static int reverse[] ={1, 2, 3, 4, 5}; 
+	 public static void main(String args[]){
+		 int total=0;
+		 for(int i=reverse.length; i>0; i++){
+			 System.out.println("array elements:"+reverse[i]);
+			 
+		 }
+		
+	 }
+
+}
+
+
+
+
+8.public class SumOfArray{
+	
+	 static String reverse[] ={"null", "null", "null", "null", "null"}; 
+	 public static void getvalue (String names[]){
+		 reverse = names;
+		 for(int i=0; i<names.length; i++ ){
+			 System.out.println("array elements:"+reverse[i]);
+			 
+		 }
+		
+	 }
+	 public static void main(String args[]){
+		 String name[] = {"Taseer", "faiz"}; 
+		 getvalue(name);
+	 }
+
+}
+
+9.
+public class FindTheNo{
+	
+	
+	static int numbers[] = { 1, 1, 2 };
+	public static void getFind(){
+		int count1 = 0;
+		int count2 = 0;
+		
+		for(int i = 0; i<numbers.length; i++){
+			System.out.println("no :"+numbers[i]);
+			if(numbers[i] == 1){
+			count1++;
+			}
+			else if(numbers[i]==2){
+				count2++;
+			}
+			else{
+				
+			}
+	}
+	System.out.println(count1);
+	System.out.println(count2);
+	
+	}
+	public static void main(String[] args){
+		getFind();
+	}
+
+
+}
+
+
+10. a)
+please define the main method 
+10.b)
+    used to pass the command  line arguments 
+10.c) invalid declaration of  method 
+
+11 it is naming convention of class variables methods 
+ class name should in the camelCase and it can't start with   special character  (except under scroll and dollar)  and number   can have in between and it can ends with numbers 
+variavle name short lower case it can't start with   special character  (except under scroll and dollar)  and number   can have in between and it can ends with numbers .
+methods name short lower case it can't start with   special character  (except under scroll and dollar)  and number   can have in between and it can ends with numbers .
+
+12.
+ its is a special type of  methods use to access the  instance variables 
+there are 3 types  
+			no arguments /default
+			copy
+ 		with arguments 
+example 
+public class Taseer{
+
+	public Taseer(){
+}
+}
+
+13
+ 1. byte 2. short 3.int 4.long 5.char 6.double 7.float 8.Boolean  9 void 10final 11public  12package  13protacted  14private 15static   16 if 17else 18ture 19false 20abstract  21while 
+ 22return  23new  24this  25class  26 Enum  27 28 29 30
+14
+program execution 
+-> source code is converted to bite code 
+ -> bite code is loaded into meta space 
+	by the help of leader 
+-> the byte code is converter to machine understandable language 
+-> the interpreter check the code line by line it find the main method then it will string method in the stack frame.
+
+15
+
+	java components are JDK
+						->it contain set of library
+						->documentation 
+						->JRE 
+								->it contain set of library
+								->documentation 
+								->JVM 
+
+
+16 polymorphism
+   inheritance
+  encapsulation
+  abstraction
+
+17 it is a one of type of polymorphism 
+		compile time 
+			-method overloading 
+   			 same method name but differ in the arguments and its order 
+ public class Methos{
+
+public static void method1(){
+
+}
+public static void method1(String names, int age){
+
+}
+public static void method1(int salary, String address){
+
+}
+public static void method1(char Isil){
+
+}
+} 
+
